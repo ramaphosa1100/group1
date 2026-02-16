@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- To make icons nicer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+        <!--Header-->
+        <header>
+            <div class="logo">
+                <h1>📦 InvyTrack</h1>
+            </div>
+            <nav class="top-nav">
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                  <li><a href="categories.html"><i class="fas fa-th"></i>Categories</a></li>
+                <li><a href="products.html"><i class="fas fa-box"></i>Products</a></li>
+                <li><a href="add-item.html"><i class="fas fa-plus"></i>Add-item</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Contact Us</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-phone"></i> Phone: (233) 240080297</p>
+                    <p><i class="fas fa-envelope"></i> Email: morticyril@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: Tema comm 25</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Your Name:</label>
+                        <input type="text" id="contactName" name="contactName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address:</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Subject:</label>
+                        <input type="text" id="contactSubject" name="contactSubject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message:</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+                    </div>
+
+                    <!-- inquiry type -->
+                    <div class="form-group">
+                        <label>Inquiry Type:</label><br>
+                        <input type="radio" id="typeSupport" name="inquiryType" value="support" checked>
+                        <label for="typeSupport">Technical Support</label><br>
+                        
+                        <input type="radio" id="typeSales" name="inquiryType" value="sales">
+                        <label for="typeSales">Sales Inquiry</label><br>
+                        
+                        <input type="radio" id="typeOther" name="inquiryType" value="other">
+                        <label for="typeOther">Other</label>
+                    </div>
+
+                    <!--  contact preferences -->
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to newsletter</label><br>
+                        
+                        <input type="checkbox" id="callback" name="callback">
+                        <label for="callback">Request callback</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Relative Link Example -->
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a> (relative link)</li>
+                    <li><a href="products.html#low-stock">View Low Stock Items</a></li>
+                    <li><a href="add-item.html">Add New Item</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 InvyTrack. All rights reserved.</p>
+            <!-- Absolute Link -->
+            <p class="social-links">
+                Follow us: 
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </p>
+        </footer>
+    </div>
+    <!-- Bottom nav for mobile view-->
+   <div class="bottom-nav">
+      <a href="categories.html"><i class="fas fa-th"></i><span>Categories</span></a>
+      <a href="products.html"><i class="fas fa-box"></i><span>Products</span></a>
+      <a href="index.html" class="home"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="add-item.html"><i class="fas fa-plus"></i><span>Add-item</span></a>
+      <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    </div>
+</body>
+</html>

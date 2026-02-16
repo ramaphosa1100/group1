@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- To make icons nicer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!--Header-->
+    <header>
+      <div class="logo">
+        <h1>📦 InvyTrack</h1>
+      </div>
+      <nav class="top-nav">
+        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="categories.html" class="active"><i class="fas fa-th"></i>Categories</a></li>
+        <li><a href="products.html"><i class="fas fa-box"></i>Products</a></li>
+        <li><a href="add-item.html"><i class="fas fa-plus"></i>Add-item</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+      </nav>
+    </header>
+
+    <!-- Categories Grid -->
+    <main>
+      <h2><i class="fas fa-th"></i> Product Categories</h2>
+      
+      <!-- Category Stats Summary -->
+      <div class="category-stats">
+        <div class="stat-card">
+          <i class="fas fa-boxes"></i>
+          <div>
+            <h3>Total Categories</h3>
+            <p>8 Categories</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-cubes"></i>
+          <div>
+            <h3>Total Items</h3>
+            <p>1,247 Items</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-dollar-sign"></i>
+          <div>
+            <h3>Total Value</h3>
+            <p>$84,500</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="categories">
+        <!-- Electronics Category -->
+        <div class="category">
+          <img src="electricals.webp" alt="Electronics">
+          <div class="category-badge">12 items</div>
+          <h3><i class="fas fa-tv"></i> Electronics</h3>
+          <p class="category-desc">Laptops, phones, TVs, and accessories</p>
+          <div class="category-details">
+            <p><i class="fas fa-box"></i> Total Items: 245</p>
+            <p><i class="fas fa-dollar-sign"></i> Total Value: $45,200</p>
+            <p><i class="fas fa-chart-line"></i> Low Stock: 8 items</p>
+          </div>
+        </div>
+
+        <!-- Clothing Category -->
+        <div class="category">
+          <img src="clothing.webp" alt="Clothing">
+          <div class="category-badge">24 items</div>
+          <h3><i class="fas fa-tshirt"></i> Clothing</h3>
+          <p class="category-desc">Men, women, and kids apparel</p>
+          <div class="category-details">
+            <p><i class="fas fa-box"></i> Total Items: 312</p>
+            <p><i class="fas fa-dollar-sign"></i> Total Value: $12,800</p>
+            <p><i class="fas fa-chart-line"></i> Low Stock: 15 items</p>
+          </div>
+        </div>
+
+        <!-- Food & Beverages Category -->
+        <div class="category">
+          <img src="food.webp" alt="Food & Beverages">
+          <div class="category-badge">45 items</div>
+          <h3><i class="fas fa-utensils"></i> Food & Beverages</h3>
+          <p class="category-desc">Groceries, drinks, and snacks</p>
+          <div class="category-details">
+            <p><i class="fas fa-box"></i> Total Items: 189</p>
+            <p><i class="fas fa-dollar-sign"></i> Total Value: $5,450</p>
+            <p><i class="fas fa-chart-line"></i> Low Stock: 23 items</p>
+          </div>
+        </div>
+
+        <!-- Fitness Category -->
+        <div class="category">
+          <img src="fitness.webp" alt="Fitness">
+          <div class="category-badge">18 items</div>
+          <h3><i class="fas fa-dumbbell"></i> Fitness</h3>
+          <p class="category-desc">Gym equipment, supplements, accessories</p>
+          <div class="category-details">
+            <p><i class="fas fa-box"></i> Total Items: 156</p>
+            <p><i class="fas fa-dollar-sign"></i> Total Value: $8,900</p>
+            <p><i class="fas fa-chart-line"></i> Low Stock: 6 items</p>
+          </div>
+        </div>
+
+        <!-- Stationery Category -->
+        <div class="category">
+          <img src="stationary.webp" alt="Stationery">
+          <div class="category-badge">32 items</div>
+          <h3><i class="fas fa-pen"></i> Stationery</h3>
+          <p class="category-desc">Office supplies, paper, writing tools</p>
+          <div class="category-details">
+            <p><i class="fas fa-box"></i> Total Items: 278</p>
+            <p><i class="fas fa-dollar-sign"></i> Total Value: $3,800</p>
+            <p><i class="fas fa-chart-line"></i> Low Stock: 12 items</p>
+          </div>
+        </div>
+
+        <!-- Automobile Category -->
+        <div class="category">
+          <img src="automobiles.webp" alt="Automobile">
+          <div class="category-badge">9 items</div>
+          <h3><i class="fas fa-car"></i> Automobile</h3>
+          <p class="category-desc">Vehicles, parts, and accessories</p>
+          <div class="category-details">
+            <p><i class="fas fa-box"></i> Total Items: 45</p>
+            <p><i class="fas fa-dollar-sign"></i> Total Value: $52,000</p>
+            <p><i class="fas fa-chart-line"></i> Low Stock: 3 items</p>
+          </div>
+        </div>
+
+        <!-- Accessories Category -->
+        <div class="category">
+          <img src="accessories.webp" alt="Accessories">
+          <div class="category-badge">28 items</div>
+          <h3><i class="fas fa-headphones"></i> Accessories</h3>
+          <p class="category-desc">Phone cases, cables, headphones</p>
+          <div class="category-details">
+            <p><i class="fas fa-box"></i> Total Items: 198</p>
+            <p><i class="fas fa-dollar-sign"></i> Total Value: $6,750</p>
+            <p><i class="fas fa-chart-line"></i> Low Stock: 9 items</p>
+          </div>
+        </div>
+
+        <!-- Books Category -->
+        <div class="category">
+          <img src="books.webp" alt="Books">
+          <div class="category-badge">42 items</div>
+          <h3><i class="fas fa-book"></i> Books</h3>
+          <p class="category-desc">Fiction, non-fiction, textbooks</p>
+          <div class="category-details">
+            <p><i class="fas fa-box"></i> Total Items: 324</p>
+            <p><i class="fas fa-dollar-sign"></i> Total Value: $6,800</p>
+            <p><i class="fas fa-chart-line"></i> Low Stock: 18 items</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Actions -->
+      <div class="category-actions">
+        <a href="add-item.html" class="action-btn">
+          <i class="fas fa-plus"></i> Add New Category
+        </a>
+        <a href="products.html" class="action-btn secondary">
+          <i class="fas fa-box"></i> View All Products
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 InvyTrack. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Bottom nav for mobile view -->
+  <div class="bottom-nav">
+    <a href="categories.html" class="active"><i class="fas fa-th"></i><span>Categories</span></a>
+    <a href="products.html"><i class="fas fa-box"></i><span>Products</span></a>
+    <a href="index.html" class="home"><i class="fas fa-home"></i><span>Home</span></a>
+    <a href="add-item.html"><i class="fas fa-plus"></i><span>Add-item</span></a>
+    <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+  </div>
+</body>
+</html>

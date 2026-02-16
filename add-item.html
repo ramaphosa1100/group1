@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- To make icons nicer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!--Header-->
+    <header>
+      <div class="logo">
+        <h1>📦 InvyTrack</h1>
+      </div>
+      <nav class="top-nav">
+        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="categories.html"><i class="fas fa-th"></i>Categories</a></li>
+        <li><a href="products.html"><i class="fas fa-box"></i>Products</a></li>
+        <li><a href="add-item.html" class="active"><i class="fas fa-plus"></i>Add-item</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+      </nav>
+    </header>
+
+    <main>
+      <h2><i class="fas fa-plus-circle"></i> Add New Inventory Item</h2>
+
+      <!-- Form with dropdown for category selection -->
+      <form action="submit.php" method="POST" class="inventory-form">
+        <!-- Product Name -->
+        <div class="form-group">
+          <label for="productName">Product Name:</label>
+          <input type="text" id="productName" name="productName" required 
+                 placeholder="Enter product name">
+        </div>
+
+        <!-- Category Dropdown -->
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <select id="category" name="category" required>
+            <option value="" disabled selected>-- Select a category --</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="food">Food & Beverages</option>
+            <option value="fitness">Fitness</option>
+            <option value="stationery">Stationery</option>
+            <option value="automobile">Automobile</option>
+            <option value="accessories">Accessories</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Description -->
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" 
+                    placeholder="Enter product description" rows="4"></textarea>
+        </div>
+
+        <!-- Radio Buttons for Product Type -->
+        <div class="form-group">
+          <label>Product Type:</label><br>
+          <input type="radio" id="typePhysical" name="productType" value="physical" checked>
+          <label for="typePhysical">Physical Product</label><br>
+          
+          <input type="radio" id="typeDigital" name="productType" value="digital">
+          <label for="typeDigital">Digital Product</label><br>
+          
+          <input type="radio" id="typeService" name="productType" value="service">
+          <label for="typeService">Service</label>
+        </div>
+
+        <!-- Features -->
+        <div class="form-group">
+          <label>Features:</label><br>
+          <input type="checkbox" id="featureWarranty" name="features[]" value="warranty">
+          <label for="featureWarranty">Includes Warranty</label><br>
+          
+          <input type="checkbox" id="featureShipping" name="features[]" value="shipping">
+          <label for="featureShipping">Free Shipping</label><br>
+          
+          <input type="checkbox" id="featureBulk" name="features[]" value="bulk">
+          <label for="featureBulk">Bulk Discount Available</label>
+        </div>
+
+        <!-- Price and Quantity -->
+        <div class="form-group">
+          <label for="price">Price ($):</label>
+          <input type="number" id="price" name="price" step="0.01" min="0" required 
+                 placeholder="0.00">
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="0" required 
+                 placeholder="0">
+        </div>
+
+        <!-- Condition  -->
+        <div class="form-group">
+          <label for="condition">Condition:</label>
+          <select id="condition" name="condition">
+            <option value="" disabled selected>-- Select condition --</option>
+            <option value="new">New</option>
+            <option value="refurbished">Refurbished</option>
+            <option value="used">Used</option>
+          </select>
+        </div>
+
+        <!-- Image Upload with Box Model and Positioning -->
+        <div class="image-upload">
+          <h3><i class="fas fa-image"></i> Product Image</h3>
+          <div class="image-box">
+            <img src="images/placeholder.png" alt="Upload product image" id="productImage">
+            <div class="upload-overlay">
+              <span><i class="fas fa-cloud-upload-alt"></i> Click to upload</span>
+            </div>
+          </div>
+          <input type="file" id="imageUpload" name="productImage" accept="image/*">
+          <p class="file-hint">Accepted formats: JPG, PNG, GIF</p>
+        </div>
+
+        <!-- Form Buttons -->
+        <div>
+          <button type="submit" class="submit-btn"><i class="fas fa-save"></i> Add to Inventory</button>
+          <button type="reset" class="reset-btn"><i class="fas fa-undo"></i> Clear Form</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 InvyTrack. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Bottom nav for mobile view  -->
+  <div class="bottom-nav">
+    <a href="categories.html"><i class="fas fa-th"></i><span>Categories</span></a>
+    <a href="products.html"><i class="fas fa-box"></i><span>Products</span></a>
+    <a href="index.html" class="home"><i class="fas fa-home"></i><span>Home</span></a>
+    <a href="add-item.html" class="active"><i class="fas fa-plus"></i><span>Add-item</span></a>
+    <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+  </div>
+</body>
+</html>
